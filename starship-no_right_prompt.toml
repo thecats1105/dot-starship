@@ -12,14 +12,7 @@ $directory\
 [ ](fg:color_bg2 bg:color_bg3)\
 $git_branch\
 $git_status\
-[ ](fg:color_bg3 bg:color_bg5)\
-$cmd_duration\
-[ ](fg:color_bg5)\
-\n$character\
-"""
-
-right_format = """
-[](fg:color_bg4)\
+[ ](fg:color_bg3 bg:color_bg4)\
 $bun\
 $c\
 $cpp\
@@ -42,8 +35,9 @@ $rust\
 $swift\
 $zig\
 [ ](fg:color_bg4 bg:color_bg5)\
-$time
-[](fg:color_bg5)\
+$cmd_duration\
+[ ](fg:color_bg5)\
+\n$character\
 """
 
 palette = "ccswe_dark"
@@ -264,9 +258,3 @@ Windows = "󰍲 "
 
 [line_break]
 disabled = true
-
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute
-style = "bg:color_bg5 fg:#A6AEBF"
-format = "[  $time ]($style)"
